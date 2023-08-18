@@ -2,7 +2,8 @@ from flask import Flask, render_template
 
 
 #create a flask instance
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
+
 
 #create a route decorator
 @app.route ('/')
